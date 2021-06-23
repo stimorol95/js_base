@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        let sum1 = 10 + 10 +"10"; 
+        let sum2 = 10 + "10" + 10;
+        let sum3 = 10 + 10 + +"10"; 
+        let sum4 = 10 / -"";
+        let sum5 = 10 / +"2,5";
+        console.log(sum1)
+        console.log(sum2)
+        console.log(sum3)
+        console.log(sum4)
+        console.log(sum5)
+
+        /* 
+        1. Произошло сложение, а потом конкатенация строк
+        2. Произошла только конкатенация строк
+        3. Получится сложение трех чисел из-за унарного плюса
+        4. Делим на минус пустоту, получаем минус бесконечность
+        5. Унарный плюс из-за запятой и получится делить на NaN - на выходе NaN 
+        */
+    </script>
+</body>
+
+</html>
